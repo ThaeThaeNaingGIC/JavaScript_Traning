@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="mx-3">
+    <header class="mx-3 mt-8">
       <div class="max-w-6xl w-full">
         <div class="flex justify-between">
           <div class="w-1/2">
@@ -39,7 +39,7 @@
             <div class="w-1/3">Sign in</div>
           </div>
         </div>
-        <div class="flex w-full">
+        <div class="flex w-full h-80">
           <div class="mt-8 w-2/5">
             <h2 class="text-2xl font-bold font-serif leading-relaxed">
               All your files in one secure location, accessible anywhere.
@@ -54,13 +54,13 @@
                 <div class="flex flex-col md:flex-row md:-mx-2 w-full">
                   <label for="email" class="sr-only">Email</label>
                   <input
-                    class="mt-4 h-8 border border-gray-400 px-4 w-full md:mx-2 placeholder-gray-300"
+                    class="mt-4 h-8 border border-gray-400 px-4 w-3/6 md:mx-2 placeholder-gray-300"
                     type="text"
                     placeholder="Enter your email..."
-                    id="first_name"
+                    id=""
                   />
                   <button
-                    class="bg-blue-600 w-2/3 h-8 text-sm text-white mt-4 py-2 px-4"
+                    class="bg-blue-600 w-1/3 h-8 text-sm text-white mt-4 py-2 px-4"
                   >
                     Get Started
                   </button>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <svg
-            viewBox="-220 140 1500 1500"
+            viewBox="-350 140 1700 1700"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -760,9 +760,10 @@
             />
           </svg>
         </div>
+        <div class="h-40"></div>
 
-        <div class="flex bg-gray-200 rounded-t-20">
-          <div class="w-2/3">
+        <div class="h-80 flex bg-gray-100">
+          <div class="w-2/3 ml-10">
             <h2 class="text-2xl font-bold font-serif leading-relaxed">
               Stay productive, wherever you are
             </h2>
@@ -776,48 +777,69 @@
               colleagues for live collaboration. No email attachments required!
             </p>
             <div>
-              <p class="text-sm mt-3 text-green-600 underline">
-                See how Fylo works
-              </p>
-              <svg
-                width="16"
-                height="16"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs>
-                  <circle id="b" cx="6" cy="6" r="6" />
-                  <filter
-                    x="-25%"
-                    y="-25%"
-                    width="150%"
-                    height="150%"
-                    filterUnits="objectBoundingBox"
-                    id="a"
+              <div class="flex">
+                <div>
+                  <p
+                    class="pb-1 border-b-2 border-green-600 text-sm mt-3 text-green-600"
                   >
-                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur
-                      stdDeviation="1"
-                      in="shadowOffsetOuter1"
-                      result="shadowBlurOuter1"
-                    />
-                    <feColorMatrix
-                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
-                      in="shadowBlurOuter1"
-                    />
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g transform="translate(2 2)">
-                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                    <use fill="#3DA08F" xlink:href="#b" />
-                  </g>
+                    See how Fylo works
+                  </p>
+                </div>
+                <svg
+                  style="color: rgb(73, 223, 75)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-arrow-right w-5 h-14"
+                  viewBox="0 0 20 20"
+                >
                   <path
-                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
-                    fill="#FFF"
-                  />
-                </g>
-              </svg>
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    fill="#49df4b"
+                  ></path>
+                </svg>
+              </div>
+              <div class="shadow-xl bg-white py-4 w-4/6 rounded">
+                <div class="mx-5">
+                  <svg
+                    width="13"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <text
+                      transform="translate(-34 -25)"
+                      fill="#07043B"
+                      fill-rule="evenodd"
+                      font-family="Helvetica"
+                      font-size="45"
+                    >
+                      <tspan x="33" y="56">“</tspan>
+                    </text>
+                  </svg>
+
+                  <div class="w-6/7 text-xs text-gray-600 font-bold mt-2">
+                    <p>
+                      Fylo has improved our team productivity by an order of
+                      magnitude. Since making the switch our team has become a
+                      well-oiled collaboration machine.
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <div
+                      class="w-12 h-12 flex justify-center items-center rounded-full uppercase font-bold text-white"
+                    >
+                      <img
+                        src="/images/avatar-testimonial.jpg"
+                        class="rounded-full"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <p class="font-bold">Kyle Burton</p>
+                      <p class="text-xs text-gray-700">Founder & CEO Huddle</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1542,9 +1564,711 @@
             />
           </svg>
         </div>
+        <div class="bg-gray-100 h-36"></div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="mx-3 flex bg-indigo-800 max-w-6xl h-40">
+      <div class="flex mx-6 my-6">
+        <div class="w-2/3">
+          <p
+            class="text-2xl font-bold font-serif leading-relaxed text-gray-200"
+          >
+            Get early access today
+          </p>
+          <p class="text-xs text-gray-200 mt-2 w-3/6">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+
+        <div class="w-1/3">
+          <form>
+            <div class="flex flex-col md:-mx-2 w-full">
+              <label for="email" class="sr-only">Email</label>
+              <input
+                class="mt-4 h-8 border border-gray-400 px-4 w-full md:mx-2 placeholder-gray-300"
+                type="text"
+                placeholder="Enter your email..."
+                id="email"
+              />
+              <button
+                class="bg-blue-600 w-3/6 h-8 text-sm text-white mt-4 py-2 px-4 md:mx-2"
+              >
+                Get Started For Free
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-indigo-900 max-w-6xl h-60 mx-3">
+      <div class="h-28">
+        <svg
+          class="text-white mx-8 pt-16"
+          viewBox="0 0 1400 1400"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs><path id="a" d="M.014.03h93.96v48.29H.015z" /></defs>
+          <g fill="none" fill-rule="evenodd">
+            <path
+              d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
+              fill="#BDBAFA"
+            />
+            <g transform="translate(72)">
+              <mask id="b" fill="#fff"><use xlink:href="#a" /></mask>
+              <path
+                d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
+                fill="#000"
+                mask="url(#b)"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="flex mx-8">
+        <div class="w-1/4">
+          <div class="flex">
+            <svg
+              class="w-6 h-8"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
+                fill="#FFF"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p class="text-gray-200 text-xs">Phone: +1-543-123-4567</p>
+          </div>
+          <div class="flex">
+            <svg
+              class="w-6 h-8"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+                fill="#FFF"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p class="text-gray-200 text-xs">example@fylo.com</p>
+          </div>
+        </div>
+        <div class="w-1/4">
+          <p class="text-xs text-gray-200">About Us</p>
+          <p class="text-xs text-gray-200 mt-1">jobs</p>
+          <p class="text-xs text-gray-200 mt-1">Press</p>
+          <p class="text-xs text-gray-200 mt-1">Blog</p>
+        </div>
+        <div class="w-1/4">
+          <p class="text-xs text-gray-200">Contact Us</p>
+          <p class="text-xs text-gray-200 mt-1">Terms</p>
+          <p class="text-xs text-gray-200 mt-1">Privacy</p>
+        </div>
+        <div class="w-1/4 flex">
+          <div>
+            <svg
+              class="h-12 w-8"
+              viewBox="0 0 180 180"
+              version="1.1"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                  .st1 {
+                    fill: #f5bb41;
+                  }
+                  .st2 {
+                    fill: #2167d1;
+                  }
+                  .st3 {
+                    fill: #3d84f3;
+                  }
+                  .st4 {
+                    fill: #4ca853;
+                  }
+                  .st5 {
+                    fill: #398039;
+                  }
+                  .st6 {
+                    fill: #d74f3f;
+                  }
+                  .st7 {
+                    fill: #d43c89;
+                  }
+                  .st8 {
+                    fill: #b2005f;
+                  }
+                  .st9 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 3;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                  }
+                  .st10 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 3;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                  }
+                  .st11 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: none;
+                    stroke: #040404;
+                    stroke-width: 3;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                  }
+                  .st12 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                  .st13 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #040404;
+                  }
+                  .st14 {
+                    fill: url(#SVGID_1_);
+                  }
+                  .st15 {
+                    fill: url(#SVGID_2_);
+                  }
+                  .st16 {
+                    fill: url(#SVGID_3_);
+                  }
+                  .st17 {
+                    fill: url(#SVGID_4_);
+                  }
+                  .st18 {
+                    fill: url(#SVGID_5_);
+                  }
+                  .st19 {
+                    fill: url(#SVGID_6_);
+                  }
+                  .st20 {
+                    fill: url(#SVGID_7_);
+                  }
+                  .st21 {
+                    fill: url(#SVGID_8_);
+                  }
+                  .st22 {
+                    fill: url(#SVGID_9_);
+                  }
+                  .st23 {
+                    fill: url(#SVGID_10_);
+                  }
+                  .st24 {
+                    fill: url(#SVGID_11_);
+                  }
+                  .st25 {
+                    fill: url(#SVGID_12_);
+                  }
+                  .st26 {
+                    fill: url(#SVGID_13_);
+                  }
+                  .st27 {
+                    fill: url(#SVGID_14_);
+                  }
+                  .st28 {
+                    fill: url(#SVGID_15_);
+                  }
+                  .st29 {
+                    fill: url(#SVGID_16_);
+                  }
+                  .st30 {
+                    fill: url(#SVGID_17_);
+                  }
+                  .st31 {
+                    fill: url(#SVGID_18_);
+                  }
+                  .st32 {
+                    fill: url(#SVGID_19_);
+                  }
+                  .st33 {
+                    fill: url(#SVGID_20_);
+                  }
+                  .st34 {
+                    fill: url(#SVGID_21_);
+                  }
+                  .st35 {
+                    fill: url(#SVGID_22_);
+                  }
+                  .st36 {
+                    fill: url(#SVGID_23_);
+                  }
+                  .st37 {
+                    fill: url(#SVGID_24_);
+                  }
+                  .st38 {
+                    fill: url(#SVGID_25_);
+                  }
+                  .st39 {
+                    fill: url(#SVGID_26_);
+                  }
+                  .st40 {
+                    fill: url(#SVGID_27_);
+                  }
+                  .st41 {
+                    fill: url(#SVGID_28_);
+                  }
+                  .st42 {
+                    fill: url(#SVGID_29_);
+                  }
+                  .st43 {
+                    fill: url(#SVGID_30_);
+                  }
+                  .st44 {
+                    fill: url(#SVGID_31_);
+                  }
+                  .st45 {
+                    fill: url(#SVGID_32_);
+                  }
+                  .st46 {
+                    fill: url(#SVGID_33_);
+                  }
+                  .st47 {
+                    fill: url(#SVGID_34_);
+                  }
+                  .st48 {
+                    fill: url(#SVGID_35_);
+                  }
+                  .st49 {
+                    fill: url(#SVGID_36_);
+                  }
+                  .st50 {
+                    fill: url(#SVGID_37_);
+                  }
+                  .st51 {
+                    fill: url(#SVGID_38_);
+                  }
+                  .st52 {
+                    fill: url(#SVGID_39_);
+                  }
+                  .st53 {
+                    fill: url(#SVGID_40_);
+                  }
+                  .st54 {
+                    fill: url(#SVGID_41_);
+                  }
+                  .st55 {
+                    fill: url(#SVGID_42_);
+                  }
+                  .st56 {
+                    fill: url(#SVGID_43_);
+                  }
+                  .st57 {
+                    fill: url(#SVGID_44_);
+                  }
+                  .st58 {
+                    fill: url(#SVGID_45_);
+                  }
+                  .st59 {
+                    fill: #040404;
+                  }
+                  .st60 {
+                    fill: url(#SVGID_46_);
+                  }
+                  .st61 {
+                    fill: url(#SVGID_47_);
+                  }
+                  .st62 {
+                    fill: url(#SVGID_48_);
+                  }
+                  .st63 {
+                    fill: url(#SVGID_49_);
+                  }
+                  .st64 {
+                    fill: url(#SVGID_50_);
+                  }
+                  .st65 {
+                    fill: url(#SVGID_51_);
+                  }
+                  .st66 {
+                    fill: url(#SVGID_52_);
+                  }
+                  .st67 {
+                    fill: url(#SVGID_53_);
+                  }
+                  .st68 {
+                    fill: url(#SVGID_54_);
+                  }
+                  .st69 {
+                    fill: url(#SVGID_55_);
+                  }
+                  .st70 {
+                    fill: url(#SVGID_56_);
+                  }
+                  .st71 {
+                    fill: url(#SVGID_57_);
+                  }
+                  .st72 {
+                    fill: url(#SVGID_58_);
+                  }
+                  .st73 {
+                    fill: url(#SVGID_59_);
+                  }
+                  .st74 {
+                    fill: url(#SVGID_60_);
+                  }
+                  .st75 {
+                    fill: url(#SVGID_61_);
+                  }
+                  .st76 {
+                    fill: url(#SVGID_62_);
+                  }
+                  .st77 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 3;
+                    stroke-miterlimit: 10;
+                  }
+                  .st78 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-miterlimit: 10;
+                  }
+                  .st79 {
+                    fill: #4bc9ff;
+                  }
+                  .st80 {
+                    fill: #5500dd;
+                  }
+                  .st81 {
+                    fill: #ff3a00;
+                  }
+                  .st82 {
+                    fill: #e6162d;
+                  }
+                  .st83 {
+                    fill: #f1f1f1;
+                  }
+                  .st84 {
+                    fill: #ff9933;
+                  }
+                  .st85 {
+                    fill: #b92b27;
+                  }
+                  .st86 {
+                    fill: #00aced;
+                  }
+                  .st87 {
+                    fill: #bd2125;
+                  }
+                  .st88 {
+                    fill: #1877f2;
+                  }
+                  .st89 {
+                    fill: #6665d2;
+                  }
+                  .st90 {
+                    fill: #ce3056;
+                  }
+                  .st91 {
+                    fill: #5bb381;
+                  }
+                  .st92 {
+                    fill: #61c3ec;
+                  }
+                  .st93 {
+                    fill: #e4b34b;
+                  }
+                  .st94 {
+                    fill: #181ef2;
+                  }
+                  .st95 {
+                    fill: #ff0000;
+                  }
+                  .st96 {
+                    fill: #fe466c;
+                  }
+                  .st97 {
+                    fill: #fa4778;
+                  }
+                  .st98 {
+                    fill: #ff7700;
+                  }
+                  .st99 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #1f6bf6;
+                  }
+                  .st100 {
+                    fill: #520094;
+                  }
+                  .st101 {
+                    fill: #4477e8;
+                  }
+                  .st102 {
+                    fill: #3d1d1c;
+                  }
+                  .st103 {
+                    fill: #ffe812;
+                  }
+                  .st104 {
+                    fill: #344356;
+                  }
+                  .st105 {
+                    fill: #00cc76;
+                  }
+                  .st106 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #345e90;
+                  }
+                  .st107 {
+                    fill: #1f65d8;
+                  }
+                  .st108 {
+                    fill: #eb3587;
+                  }
+                  .st109 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #603a88;
+                  }
+                  .st110 {
+                    fill: #e3ce99;
+                  }
+                  .st111 {
+                    fill: #783af9;
+                  }
+                  .st112 {
+                    fill: #ff515e;
+                  }
+                  .st113 {
+                    fill: #ff4906;
+                  }
+                  .st114 {
+                    fill: #503227;
+                  }
+                  .st115 {
+                    fill: #4c7bd9;
+                  }
+                  .st116 {
+                    fill: #69c9d0;
+                  }
+                  .st117 {
+                    fill: #1b92d1;
+                  }
+                  .st118 {
+                    fill: #eb4f4a;
+                  }
+                  .st119 {
+                    fill: #513728;
+                  }
+                  .st120 {
+                    fill: #ff6600;
+                  }
+                  .st121 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #b61438;
+                  }
+                  .st122 {
+                    fill: #fffc00;
+                  }
+                  .st123 {
+                    fill: #141414;
+                  }
+                  .st124 {
+                    fill: #94d137;
+                  }
+                  .st125 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #f1f1f1;
+                  }
+                  .st126 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #66e066;
+                  }
+                  .st127 {
+                    fill: #2d8cff;
+                  }
+                  .st128 {
+                    fill: #f1a300;
+                  }
+                  .st129 {
+                    fill: #4ba2f2;
+                  }
+                  .st130 {
+                    fill: #1a5099;
+                  }
+                  .st131 {
+                    fill: #ee6060;
+                  }
+                  .st132 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #f48120;
+                  }
+                  .st133 {
+                    fill: #222222;
+                  }
+                  .st134 {
+                    fill: url(#SVGID_63_);
+                  }
+                  .st135 {
+                    fill: #0077b5;
+                  }
+                  .st136 {
+                    fill: #ffcc00;
+                  }
+                  .st137 {
+                    fill: #eb3352;
+                  }
+                  .st138 {
+                    fill: #f9d265;
+                  }
+                  .st139 {
+                    fill: #f5b955;
+                  }
+                  .st140 {
+                    fill: #dd2a7b;
+                  }
+                  .st141 {
+                    fill: #66e066;
+                  }
+                  .st142 {
+                    fill: #eb4e00;
+                  }
+                  .st143 {
+                    fill: #ffc794;
+                  }
+                  .st144 {
+                    fill: #b5332a;
+                  }
+                  .st145 {
+                    fill: #4e85eb;
+                  }
+                  .st146 {
+                    fill: #58a45c;
+                  }
+                  .st147 {
+                    fill: #f2bc42;
+                  }
+                  .st148 {
+                    fill: #d85040;
+                  }
+                  .st149 {
+                    fill: #464eb8;
+                  }
+                  .st150 {
+                    fill: #7b83eb;
+                  }
+                </style>
+                <g id="Layer_1"></g>
+                <g id="Layer_2">
+                  <g>
+                    <path
+                      class="st88"
+                      d="M50,2.5c-58.892,1.725-64.898,84.363-7.46,95l0,0h0H50h7.46l0,0C114.911,86.853,108.879,4.219,50,2.5z"
+                    ></path>
+                    <path
+                      class="st83"
+                      d="M57.46,64.104h11.125l2.117-13.814H57.46v-8.965c0-3.779,1.85-7.463,7.781-7.463h6.021 c0,0,0-11.761,0-11.761c-12.894-2.323-28.385-1.616-28.722,17.66V50.29H30.417v13.814H42.54c0,0,0,33.395,0,33.396H50h7.46l0,0h0 V64.104z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <svg
+              class="h-11 w-8"
+              viewBox="0 0 1400 1400"
+              class="icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M362.41 879.648c-95.417 0-192.465-27.316-288.485-81.263-8.064-4.527-11.83-14.15-8.98-22.977 2.855-8.788 11.185-14.191 20.773-13.355 72.17 8.408 148.407-8.75 205.511-42.302-66.043-15.525-119.417-58.397-147.571-120.676a19.454 19.454 0 0 1 3.119-20.884c4.983-5.746 13.011-8.03 20.317-5.781a142.417 142.417 0 0 0 25.033 5.364c-50.106-29.903-103.784-87.197-103.784-172.987 0-7.531 4.335-14.379 11.11-17.573a19.353 19.353 0 0 1 20.654 2.47c6.241 5.099 12.938 9.362 19.821 12.708-14.339-19.44-26.781-43.562-33.857-70.8-12.972-49.989-5.478-100.585 21.683-146.351 3.233-5.516 9.018-9.054 15.372-9.514 6.238-0.681 12.552 2.249 16.584 7.27 57.332 71.633 159.212 158.183 323.066 174.01-3.003-51.854 12.556-136.841 84.154-178.653 87.462-51.13 173.248-44.434 245.606 18.983 32.263-7.187 83.202-29.291 93.741-36.673a19.516 19.516 0 0 1 22.33-0.04c6.696 4.683 9.779 13.052 7.686 20.963-4.87 18.375-15.864 38.765-29.6 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.318 4.146 5.937 6.505 6.775 16.131 2.097 23.587-22.942 36.218-59.959 69.963-84.727 88.222 9.931 121.587-39.26 255.425-132.998 360.459-99.976 111.966-233.776 173.634-376.781 173.634h-0.074z"
+                  fill="#2577FF"
+                ></path>
+                <path
+                  d="M773.705 209.378c11.484-2.559 25.333-7.039 38.885-12.041-50.557-43.083-107.542-58.134-158.074-50.884 36.738 5.548 86.781 34.522 119.189 62.925zM484.047 365.248c-0.152-2.646-0.222-5.432-0.275-8.24-133.027-2.397-266.805-97.597-324.061-174.009-3.863-5.155-10.347-7.952-16.584-7.271-6.354 0.46-12.138 3.998-15.371 9.514-2.83 4.767-5.318 9.616-7.72 14.483 86.352 148.04 212.727 150.909 364.011 165.523zM954.896 233.745c-6.012-6.466-15.483-8.141-23.32-4.144-4.87 2.509-14.002 5.781-24.882 9.014 13.736-18.262 24.73-38.652 29.6-57.027a19.502 19.502 0 0 0-7.686-20.963 19.52 19.52 0 0 0-22.33 0.039c-3.711 2.6-12.577 7.061-23.723 12.014 0.607 2.903 0.772 5.914-0.021 8.911-4.87 18.375-15.864 38.765-29.599 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.32 4.144 5.936 6.507 6.774 16.133 2.095 23.59-22.942 36.216-59.959 69.961-84.726 88.22 9.929 121.587-39.261 255.425-132.997 360.461C592.268 810.433 469.603 871.055 337.5 878.76c8.309 0.411 16.624 0.888 24.91 0.888h0.073c143.006 0 276.806-61.669 376.784-173.633 93.736-105.035 142.927-238.874 132.997-360.461 24.767-18.259 61.784-52.004 84.726-88.22 4.68-7.457 3.842-17.083-2.094-23.589z"
+                  fill=""
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <svg
+              class="w-6 h-9"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect
+                  width="48"
+                  height="48"
+                  fill="white"
+                  fill-opacity="0.01"
+                ></rect>
+                <path
+                  d="M34 6H14C9.58172 6 6 9.58172 6 14V34C6 38.4183 9.58172 42 14 42H34C38.4183 42 42 38.4183 42 34V14C42 9.58172 38.4183 6 34 6Z"
+                  fill="#2F88FF"
+                  stroke="#000000"
+                  stroke-width="4"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                  fill="#43CCF8"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M35 15C36.1046 15 37 14.1046 37 13C37 11.8954 36.1046 11 35 11C33.8954 11 33 11.8954 33 13C33 14.1046 33.8954 15 35 15Z"
+                  fill="white"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
